@@ -39,9 +39,9 @@
                               <td><c:out value="${user.email}"/></td>
                               <td><c:out value="${user.fullName}"/></td>
                               <td>
-                                <button class="btn btn-success">View</button>
-                                <button class="btn btn-warning ">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <a href="/admin/user/${user.id}" class="btn btn-success">View</a>
+                                <a href="/admin/user/update/${user.id}" class="btn btn-warning ">Update</a>
+                                <a href="" class="btn btn-danger">Delete</a>
                               </td>
                           </tr>
                       </c:forEach>
